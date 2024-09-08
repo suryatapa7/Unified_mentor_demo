@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,50;1,9..144,100..900,50&display=swap" rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Unified Mentor - DEMO</title>
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html"><h4>Unified Mentor</h4></a>
+
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="open-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button id="close-menu-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>Discover a World of Learning Opportunities</h1>
+                <p>
+                    Unified Mentor is a platform that connects students with mentors who can help them achieve their goals.
+                </p>
+
+                <a href="mentors.html" class="btn btn-primary">Find Your Mentor</a>
+            </div>
+
+            <div class="header-right">
+                <div class="header_right-image">
+                    <img src="./images/Website Creator-amico.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Benefits</h1>
+                <p>
+                    Unlock Your Potential with Our eLearning Platform!
+                    Join our platform to enjoy personalized learning, high-quality content, career-boosting skills, 
+                    community support, and flexible learning at an affordable price, all in one place! 
+                </p>
+                <a href="signIn_Out.html" class="btn">Join Now</a>
+            </div>
+
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-code"></i></span>
+                    <h5>Web Development</h5>
+                    <p>
+                        HTML, CSS, JavaScript, React...
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                    <h5>Data Science</h5>
+                    <p>
+                        big data, data mining...
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-tachograph-digital"></i></span>
+                    <h5>Digital Marketing</h5>
+                    <p>
+                        social media marketing, email marketing...
+                    </p>
+                </article>
+
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-laptop-code"></i></span>
+                    <h5>Machine Learning</h5>
+                    <p>
+                        regression, decision trees...
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-list-check"></i></span>
+                    <h5>Product Management</h5>
+                    <p>
+                        market research,product metrics analysis...
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-arrows-down-to-people"></i></span>
+                    <h5>Human Resource Management</h5>
+                    <p>
+                        conflict resolution,strategic HR planning...
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="courses">
+        <h2>Best-Selling Courses</h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/course1.jpg" alt="course number one">
+                </div>
+                <div class="course_info">
+                    <h4>Responsive Social Media Website UI Design</h4>
+                    <p>
+                        clean and intuitive layout, incorporating flexible grids, scalable typography, and 
+                        adaptive imagery to ensure seamless user experiences across various devices and screen sizes.
+                    </p>
+                    <a href="mentors.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/course2.jpg" alt="course number one">
+                </div>
+
+                <div class="course_info">
+                    <h4>Responsive SmartHome Website Design</h4>
+                    <p>
+                        user-friendly interface, featuring a modular layout, high-contrast visuals, and intuitive controls to 
+                        effortlessly manage and monitor smart devices from any device or screen size
+                    </p>
+                    <a href="mentors.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/course3.jpg" alt="course number one">
+                </div>
+                <div class="course_info">
+                    <h4>Responsive Admin Dashboard UI Design</h4>
+                    <p>
+                        incorporating customizable widgets, data-driven charts, and intuitive navigation to provide administrators 
+                        with a seamless and efficient experience in managing and monitoring complex systems across various devices and screen sizes
+                    </p>
+                    <a href="mentors.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs_container">
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What is Unified Mentor?</h4>
+                    <p>
+                        Unified Mentor is an online education platform that offers a wide range of Courses to help individuals 
+                        enhance their skills and knowledge in various fields. Our platform provides a 
+                        convenient and flexible way to access high-quality educational content from anywhere.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How do I sign up for courses on Unified Mentor?</h4>
+                    <p>
+                        Signing up for Courses on UnifiedMentor is easy. Simply purchase a Course and we will handle rest of it.
+                        You will be given access to our LMS portal before starting of batch through email.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Are the courses on Unified mentor self-placed?</h4>
+                    <p>
+                        Yes, most of the Courses on UnifiedMentor are self-paced. This means you can learn at your own convenience 
+                        and set your own study schedule. You can access the Course materials and lectures whenever it suits you best.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What type of courses are available on Unified Mentor?</h4>
+                    <p>
+                        Yes, many of our Courses offer certificates of completion that you can showcase on your resume or share 
+                        on your professional profiles. Certificates demonstrate your dedication
+                        to continuous learning and can enhance your career prospects.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>How can I interact with instructors and other learners?</h4>
+                    <p>
+                        UnifiedMentor provides a platform for interaction between instructors and learners. 
+                        You can participate in discussion forums, ask questions, and engage in conversations with 
+                        both the instructors and fellow learners to enhance your understanding of the Course material.
+                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Is technical support available if I encounter any issues?</h4>
+                    <p>
+                        Absolutely. Our dedicated support team is available to assist you with 
+                        any technical issues or queries you may have. You can reach out to us via 
+                        email at info@unifiedmentor.com or through our customer support portal.
+                    </p>
+                </div>
+            </article>
+
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Can I access the course materials on mobile devices?</h4>
+                    <p>
+                        Yes, our platform is designed to be mobile-responsive. 
+                        You can access your Courses and learning materials on various devices, 
+                        including smartphones and tablets, making it convenient to learn on the go.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>what happens if i need to pause my studies or take a break?</h4>
+                    <p>
+                        Unified Mentor understands that life can get busy. 
+                        You can pause your studies and pick up where you left off whenever you're ready. 
+                        Your progress will be saved, and you can resume learning at your own pace.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>What software/tools would be needed for the training and how can I get them?</h4>
+                    <p>
+                        All the software/tools that you need for the training would be shared with you during the training as and when you need it.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="faq">
+                <div class="faq_icon"><i class="fa-solid fa-plus"></i></div>
+                <div class="question_answer">
+                    <h4>Is there a refund policy in case I'm not satisfied with a Course?</h4>
+                    <p>
+                        Unified Mentor's refund policy varies based on the specific Course and circumstances. 
+                        Please refer to our Cancellation and Refund Policy for detailed information. 
+                        If you have concerns about a Course, you can reach out to our support team to discuss your options.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="container testimonials_container mySwiper">
+        <h2>Students Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg" alt="avatar girl">
+                </div>
+
+                <div class="testimonial_info">
+                    <h5>Rose Mary</h5>
+                    <small>Student</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>
+                        I've enrolled in the data science Internship and found it very exhaustive 
+                        and detailed. The mentors are very helpful and detailed in a language that is understandable.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg" alt="avatar boy">
+                </div>
+
+                <div class="testimonial_info">
+                    <h5>Danish Khan</h5>
+                    <small>IT Professional</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>
+                        As a working professional, I didn't have the time to attend traditional classes. 
+                        Unified Mentor provided me with the flexibility to learn at my own pace, and the personalized 
+                        feedback from instructors was invaluable.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg" alt="avatar boy">
+                </div>
+
+                <div class="testimonial_info">
+                    <h5>Sam Sinhs</h5>
+                    <small>Software Engineer</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>
+                        I was struggling to keep up with my coursework, but thanks to Unified Mentor, 
+                        I was able to access high-quality video lectures and interactive quizzes that helped me grasp complex concepts easily.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg" alt="avatar girl">
+                </div>
+
+                <div class="testimonial_info">
+                    <h5>Emily Sans</h5>
+                    <small>Data-Scientist</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>
+                        I was hesitant to try online learning, but Unified Mentor exceeded my expectations. 
+                        The engaging video lessons, interactive simulations, and supportive community made learning fun and enjoyable.
+                    </p>
+                </div>
+            </article>
+
+
+            <article class="testimonials swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar7.jpg" alt="avatar girl">
+                </div>
+
+                <div class="testimonial_info">
+                    <h5>Sophia Lins</h5>
+                    <small>Web Developer</small>
+                </div>
+
+                <div class="testimonial_body">
+                    <p>
+                        The platform has helped me to create customized lesson plans, 
+                        track student progress, and provide targeted support. It's been a game-changer for my programming practice
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+
+
+
+    
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>Unified Mentor</h4>
+                </a>
+                <p>
+                    Start your journey to success today with our comprehensive and engaging programs.
+                </p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Quick Links</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mentors.html">Mentors</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 6283 800330</p>
+                    <p>hello@unifiedmentor.com</p>
+                </div>
+
+                <ul class="footer_socials">
+                    <li>
+                        <a href="https://twitter.com/unifiedmentor" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/unifiedmentor" target="_blank">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/unifiedmentor/" target="_blank">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/unifiedmentor/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer_copyright">
+            <small>Copyright &copy; Unified Mentor. All Rights Reserved</small>
+        </div>
+    </footer>
+
+
+  
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        //when window width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+        });
+    </script>
+</body>
+</html>
