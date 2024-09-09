@@ -119,7 +119,16 @@ const mentors = [
   // Function to generate mentor profiles
   function generateMentorProfiles() {
     const mentorGrid = document.querySelector(".mentor-grid");
-    mentors.forEach((mentor) => {
+    const searchInput = document.getElementById('search-input');
+    const searchQuery = searchInput.value.toLowerCase();
+
+     // Filter mentors based on search query
+     const filteredMentors = mentors.filter((mentor) => {
+        return mentor.expertise.toLowerCase().includes(searchQuery) || mentor.name.toLowerCase().includes(searchQuery);
+    });
+
+    mentorGrid.innerHTML = '';
+    filteredMentors.forEach((mentor) => {
         const mentorProfile = document.createElement("div");
         mentorProfile.classList.add("mentor-profile");
         mentorProfile.innerHTML = `
@@ -171,8 +180,20 @@ const mentors = [
     });
   }
   
-  // Generate mentor profiles
-  generateMentorProfiles();
+
+
+// Call the generateMentorProfiles function on page load
+generateMentorProfiles();
+
+// Add an event listener to the search input to trigger the search on keyup
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('keyup', generateMentorProfiles);
+
+// Add an event listener to the search button to trigger the search on click
+const searchBtn = document.getElementById('search-btn');
+searchBtn.addEventListener('click', generateMentorProfiles);
+
+
 
 
   
